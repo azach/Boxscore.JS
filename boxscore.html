@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="gameoutcomes.js"></script>
+ 
+</head>
+<body>
+  
+Number of outs
+<div class="selection" id="outs" style="font-size:62.5%;">
+	<input type="radio" id="outs0" name="outs" checked="true" value=0 /><label for="outs0">0</label>
+	<input type="radio" id="outs1" name="outs" value=1 /><label for="outs1">1</label>
+	<input type="radio" id="outs2" name="outs" value=2 /><label for="outs2">2</label>
+</div>
+
+Strikes
+<div class="selection" id="strikes" style="font-size:62.5%;">
+	<input type="radio" id="strikes0" name="strikes" value=0 checked="true" /><label for="strikes0">0</label>
+	<input type="radio" id="strikes1" name="strikes" value=1 /><label for="strikes1">1</label>
+	<input type="radio" id="strikes2" name="strikes" value=2 /><label for="strikes2">2</label>
+</div>
+
+Balls
+<div class="selection" id="balls" style="font-size:62.5%;">
+	<input type="radio" id="balls0" name="balls" value=0 checked="true"/><label for="balls0">0</label>
+	<input type="radio" id="balls1" name="balls" value=1 /><label for="balls1">1</label>
+	<input type="radio" id="balls2" name="balls" value=2 /><label for="balls2">2</label>
+	<input type="radio" id="balls3" name="balls" value=3 /><label for="balls3">3</label>
+</div>
+
+Men on base
+<div class="selection" id="mob" style="font-size:62.5%;">
+	<input type="checkbox" id="mob0" name="mob" value=0 /><label for="mob0">1st</label>
+	<input type="checkbox" id="mob1" name="mob" value=1 /><label for="mob1">2nd</label>
+	<input type="checkbox" id="mob2" name="mob" value=2 /><label for="mob2">3rd</label>
+</div>
+<br>
+<button id="outcomes" style="font-size:90%;">Show me what can happen!</button>
+
+<p id="debug">
+</p>
+
+<div>
+<style>
+	#outcomelist .ui-selecting { background: #FECA40; }
+	#outcomelist .ui-selected { background: #F39814; color: white; }
+	#outcomelist { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+	#outcomelist li { margin: 3px; padding: 0.3em; font-size: 1em; height: 18px; }
+</style>
+
+<p id="outcomelist">
+</p>
+
+</div>
+
+</body>
+</html>
